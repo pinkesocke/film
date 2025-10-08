@@ -42,8 +42,8 @@
     color: black;
     border-color: rgba(255 255 255 / 0.4);
     transition: 0.3s;*/
-    cursor: default;
-    /*cursor: url('../image/sock.png'), auto;*/
+    /*cursor: default;*/
+    cursor: url('../image/sock.png'), auto;
 }
 
 .alt-tag {
@@ -145,4 +145,18 @@ sup.confirmed {
 sup.unklar {
     color: yellow;
     background-color: orange;
+}
+
+div.title-wrapper a {
+  text-decoration: none;
+  color: #000;
+}
+
+div.title-wrapper a:hover {
+  text-decoration: none;
+  color: #6d6d6d;
+}
+
+.more {
+    color:rgba(255, 255, 255, 0.719)
 }

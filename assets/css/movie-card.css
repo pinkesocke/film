@@ -24,16 +24,6 @@ div.title-wrapper h1, div.title-wrapper h3 {
   margin: 0;
 }
 
-div.title-wrapper a {
-  text-decoration: none;
-  color: #000;
-}
-
-div.title-wrapper a:hover {
-  text-decoration: none;
-  color: #6d6d6d;
-}
-
 body {
   background: #f5f5f5;
 }
@@ -272,17 +262,12 @@ a[data-tooltip]::after {
   opacity: 0.85;
 }
 a[data-tooltip]::before {
-  /*
-   * using data-tooltip instead of title so we 
-   * don't have the real tooltip overlapping
-   */
   content: attr(data-tooltip);
   background: #000;
   color: #fff;
   font-size: 13px;
   padding: 5px;
   border-radius: 5px;
-  /* we don't want the text to wrap */
   white-space: nowrap;
   text-decoration: none;
 }
@@ -298,9 +283,6 @@ a[data-tooltip]:hover::after {
   display: block;
 }
 
-/** positioning **/
-
-/* top tooltip */
 a[data-tooltip][data-placement="top"]::before {
   bottom: 100%;
   left: 0;
@@ -314,7 +296,11 @@ a[data-tooltip][data-placement="top"]::after {
   margin-bottom: 4px;
 }
 
-/* ---------- Responsive: bis ~820px ---------- */
+/*div.production-logo img {
+  margin-bottom: 10px;
+}*/
+
+/* ---------- Responsive ---------- */
 @media (max-width: 820px) {
   .container {
     width: calc(100% - 24px);
